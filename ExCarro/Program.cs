@@ -31,6 +31,10 @@ namespace ExCarro
 
             grupoGrande.Acelerar();
 
+            AutomovelBazooka automovelBazooka = new AutomovelBazooka((Carro)automovelB);
+            AutomovelMetralhadora automovelMetralhadora = new AutomovelMetralhadora((Carro)automovel);
+            automovelBazooka.Atirar();
+            automovelMetralhadora.Atirar();
             Console.ReadKey();
         }
     }
